@@ -74,3 +74,39 @@ $
 
 Só deixar claro que eu estou bem irritado com a porra do path que uso na minha máquina local, o bagulho tem um acento velho. Puta preguiça de formatar para mudar isso...será que preciso formatar? eu sla, vou demorar para mudar isso
 bom, voltamos com comando mais interessantes em outro momento, abraços
+
+11. clear – Limpa o terminal
+    clear
+
+12. history – Mostra comandos já usados
+    history
+
+13. grep – Procura palavras em arquivos ou comandos
+    grep "palavra" arquivo.txt
+    cat arquivo.txt | grep "erro"
+
+14. head e tail – Início ou fim do arquivo
+    head arquivo.txt
+    tail arquivo.txt
+    tail -f log.txt
+
+15. man – Manual de um comando
+    man ls
+    # Ou, alternativa:
+    ls --help
+
+16. whoami – Mostra o usuário atual
+    whoami
+
+17. date – Mostra data e hora
+    date
+
+18. uname – Info sobre o sistema
+    uname -a
+
+19. wc – Conta linhas, palavras e caracteres
+    wc arquivo.txt
+    wc -l arquivo.txt
+
+20. chmod – Altera permissões
+    chmod +x script.sh
