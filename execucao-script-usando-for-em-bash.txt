@@ -1,3 +1,64 @@
+Explicação do Script Completo:
+
+for Termo in $(echo {1..14}/{1..8}/{1..64})
+ do
+     echo $Termo
+ done
+
+Explicação detalhada:
+
+    for:
+
+        A palavra-chave for é usada para iniciar um loop. 
+        Um loop for permite que você execute um bloco de 
+        código repetidamente com base em uma lista de 
+        valores (neste caso, os valores gerados por $(echo {1..14}/{1..8}/{1..64})).
+
+    Termo:
+
+        Termo é a variável que receberá cada um dos itens
+        gerados pela expressão dentro do $(...). A cada 
+        iteração do loop, a variável Termo vai armazenar 
+        uma nova combinação no formato X/Y/Z, onde:
+
+            X varia de 1 a 14
+
+            Y varia de 1 a 8
+
+            Z varia de 1 a 64
+
+    $(echo {1..14}/{1..8}/{1..64}):
+
+        A expressão dentro do $(...) é chamada de 
+        "command substitution". Ela gera uma lista de todas
+        as combinações possíveis de números a partir dos 
+        intervalos {1..14}, {1..8} e {1..64}.
+
+        Cada combinação será uma string separada por 
+        barras (/), como 1/1/1, 1/1/2, ..., até 14/8/64.
+
+    do:
+
+        A palavra-chave do inicia o bloco de código que será
+        executado para cada item da lista gerada. 
+        Ou seja, para cada valor de Termo, o código dentro do
+        bloco será executado.
+
+    echo $Termo:
+
+        O comando echo $Termo é responsável por imprimir o valor
+        da variável Termo a cada iteração. Ou seja, a cada 
+        combinação gerada, o script imprimirá um novo valor 
+        como 1/1/1, 1/1/2, até 14/8/64.
+
+    done:
+
+        A palavra-chave done encerra o bloco do loop for. 
+        Quando o loop termina (após ter iterado por todos os 
+        itens), o código que vem depois do done será executado (se houver).
+
+
+
 1/1/1
 1/1/2
 1/1/3

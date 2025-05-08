@@ -1,3 +1,24 @@
+Comando:
+
+echo -e {1..14}/{1..8}/{1..64}'\n'
+
+Explicação:
+
+    echo:
+
+        O comando echo é usado para imprimir ou exibir
+        texto no terminal. É a forma básica de gerar 
+        saída no Linux.
+
+    -e:
+
+        A opção -e é usada com o echo para habilitar a 
+        interpretação de caracteres especiais, como \n 
+        (quebra de linha), \t (tabulação), entre outros. 
+        Sem o -e, o echo exibe os caracteres de forma literal (sem interpretar).
+
+
+
 1/1/1
  1/1/2
  1/1/3
