@@ -1,0 +1,51 @@
+Uma leve explication about - Expansão de Chaves {....} 
+
+SINTAXE                DESCRIÇÃO
+{LSITA}                LISTA são cadeias/caracteres/variaáveis/alguma coisa? separadas por virgulas
+{INI...FIM}            INI e FIM são número, letras ou caracteres especiais
+{INI...FIM...INCR}     INCR é o incremento (ou razão, ou passo - devo entender logo que porra é essa, mas o pai se vira nos 30).
+PREFIXOS{****}         os asteriscos (****) podem ser substituidos por LISTA ou por um par INI...FIM
+PREFIXO{****}SUFIXO    os asteriscos (****) podem ser substituídos por LISTA ou por um par INI...FIM
+
+Histórico de códigos
+
+# Criando arquivos com prefixo comum
+touch arq.py
+touch arq.pdf
+touch arq.docx
+touch arq.txt
+
+# Listando arquivos no diretório
+ls
+# Resultado: README.md  annotations.txt  arq.docx  arq.pdf  arq.py  arq.txt  basiquim-do-basicao.sh
+
+# Expansão de chaves (brace expansion) em shell
+echo {r,p,g}ato
+# Resultado: rato pato gato
+
+echo ca{,r}nal
+# Resultado: canal carnal
+
+# Listando arquivos que começam com "arq."
+ls arq.*
+# Resultado: arq.docx  arq.pdf  arq.py  arq.txt
+
+# Com comentário usando echo após ;
+ls arq.*; echo "<- Listagem de todos os arquivos começando em arq"
+
+# Comando mal formado (não fazer isso)
+# ls arq.* echo ...
+# ls arq.*, echo ...
+# (Esses geraram erros)
+
+# Tentativa incorreta de usar chaves para globbing
+rm -r {arq.*}
+# Resultado: erro, pois não expande corretamente
+
+# Forma correta de remover os arquivos
+rm -r arq.*
+
+# Verificando a remoção
+ls
+# Resultado: README.md  annotations.txt  basiquim-do-basicao.sh
+
