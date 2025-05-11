@@ -1,0 +1,23 @@
+# -> Tudo após esse caracterer é visto(pelo Shell) como um comentario do autor do script
+
+ls -l arq*   # Lista todos os arquivos começados por arq
+
+Pasmem, isso aí é um comentário!
+
+
+IMPORTANTE E, NO ENTANTO:
+    Se a primeira linha de um script começar com -> #! <-, o shell entenderá que o que 
+    vem a seguir se trata do path para o interpretador que será usado por esse script.
+        EX:
+        #!/bin/sh
+
+        ou
+        #!/bin/sh
+
+        ou
+        #!/bin/awk
+
+        ou
+        #!/bin/sed 
+
+        tem outros por ai.
