@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 testando
+=======
+teste 123
+>>>>>>> 276a92eab04aaa233ae8f4a35ca2d78c0575eab1
