@@ -1,0 +1,12 @@
+daantascaio@NEGRONVISK:~$ time ls -l
+total 4
+drwxr-xr-x 3 daantascaio daantascaio 4096 May  7 22:32 repos
+
+real    0m0.002s -> tempo do relógio decorrido
+user    0m0.001s -> tempo de CPU gasto na execução em modo usuário
+sys     0m0.000s -> tempo de CPU gasto na chamada do sistema no modo kernel
+
+    Esse comando me retornar o tempo de execução do processo.
+
+    Modo usuário ->	Onde os programas comuns rodam, com acesso limitado ao hardware.
+    Modo kernel	 -> Onde roda o núcleo do sistema, com acesso total ao hardware.
